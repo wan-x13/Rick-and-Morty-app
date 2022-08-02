@@ -33,7 +33,8 @@ const List = () => {
     }, [characters.length])
 
     return (
-        <div>
+        <div className="container">
+                 <div className="row">
             <h2>Characters</h2>
 
             {loading ? (
@@ -52,6 +53,9 @@ const List = () => {
                
             )}
         </div>
+
+        </div>
+   
     );
 };
 
