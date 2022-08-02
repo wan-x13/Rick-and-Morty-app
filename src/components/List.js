@@ -24,11 +24,6 @@ const List = () => {
           
         }
         fetchData()
-    // setLoading(false)
-    //     fetch('https://rickandmortyapi.com/api/character')
-    //     .then((response)=>response.json())
-    //     .then(({results})=> setCharacters(results))
-    //     .catch(err=> console.log(err))
        
     }, [characters.length])
 

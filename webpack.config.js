@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const EslintPlugin = require('eslint-webpack-plugin');
 
 module.exports ={
     module :{
@@ -21,6 +21,7 @@ module.exports ={
         new HtmlWebpackPlugin({
             template: './public/index.html',
             filename: './index.html'
-        })
+        }),
+        new EslintPlugin(),
     ]
 }
